@@ -1,0 +1,49 @@
+.categories {
+    background-color: $mint;
+    padding: 140px 0;
+    display: flex;
+    justify-content: center;
+
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__item {
+        max-width: 460px;
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 580px;
+        transition: transform .3s;
+
+        &:focus {
+            outline: 2px solid $accent;
+        }
+
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+
+    &__title {
+        display: inline-block;
+        @extend %title-font;
+        background-color: $white;
+        border-radius: 20px;
+        padding: 30px 80px;
+    }
+}

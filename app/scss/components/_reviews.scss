@@ -1,0 +1,85 @@
+.reviews {
+    text-align: center;
+    background-color: $grayBg;
+    background-image: url('../images/reviews/reviews-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 130px 0 150px;
+
+    &__caption {
+        margin-bottom: 60px;
+    }
+
+    &__slider {
+        max-width: 965px;
+        padding-bottom: 75px;
+        border-bottom: 1px solid $gray;
+        margin: 0 auto 100px;
+    }
+}
+
+.review {
+    max-width: 940px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+
+    &__photo {
+        border-radius: 50%;
+        object-fit: contain;
+        margin-bottom: 20px;
+    }
+
+    &__rating {
+        margin-bottom: 30px;
+        z-index: 0;
+    }
+
+    &__blockquote {
+        line-height: 1.7;
+        margin-bottom: 20px;
+        @include line-clamp(3);
+    }
+
+    &__author {
+        @extend %title-font;
+        font-size: 26px;
+    }
+
+    &__rank {
+        font-size: 14px;
+    }
+}
+
+.stats {
+        display: flex;
+        justify-content: center;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 250px;
+        height: 250px;
+        color: $primary;
+        font-weight: 700;
+        border: 6px solid $accent;
+        background-color: $lightGray;
+        border-radius: 50%;
+        box-shadow: inset 0 0 0 5px $white;
+
+        &:not(:last-child) {
+            margin-right: 25px;
+        }
+    }
+
+    &__value {
+        font-family: 'Roboto', sans-serif;
+        font-size: 42px;
+        display: block;
+    }
+}

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic - Healthy food | Main page</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <nav class="header__nav">
+
+            <button class="burger-btn burger-btn--open" type="button">
+                <span class="burger-btn__line"></span>
+                <span class="sr-only">Открыть меню</span>
+            </button>
+
+            <a class="link logo header__logo" href="#">
+                <img class="logo__img" src="images/logo.svg" width="200" height="56" alt="Logo image">
+            </a>
+
+            <ul class="header__list">
+                <li class="header__item">
+                    <a class="link header__link header__link--active" href="#">Home</a>
+                </li>
+                <li class="header__item">
+                    <a class="link header__link" href="#">About Us</a>
+                </li>
+                <li class="header__item">
+                    <a class="link header__link" href="#">Shop</a>
+                </li>
+                <li class="header__item">
+                    <a class="link header__link" href="#">Pages</a>
+                </li>
+                <li class="header__item">
+                    <a class="link header__link" href="#">Contact Us</a>
+                </li>
+            </ul>
+
+            <button class="cart-btn" type="button">
+                Cart 0
+            </button>
+        </nav>
+
+        <div class="mobile-menu">
+            <div class="overlay"></div>
+            <div class="mobile-menu__inner">
+
+
+                <div class="mobile-menu__item">
+                    <a class="link logo mobile-menu__logo" href="#">
+                        <img class="logo__img" src="images/logo.svg" width="200" height="56" alt="Logo image">
+                    </a>
+                    <button class="burger-btn burger-btn--close" type="button">
+                        <span class="sr-only">Закрыть меню</span>
+                    </button>
+                </div>
+
+                <div class="mobile-menu__item">
+                    <ul class="burger-menu__list">
+                        <li class="burger-menu__item">
+                            <a class="link burger-menu__link burger__link--active" href="#">Home</a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a class="link burger-menu__link" href="#">About Us</a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a class="link burger-menu__link" href="#">Shop</a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a class="link burger-menu__link" href="#">Pages</a>
+                        </li>
+                        <li class="burger-menu__item">
+                            <a class="link burger-menu__link" href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu__item">
+                    <button class="cart-btn burger-cart" type="button">
+                        Cart 0
+                    </button>
+                </div>
+                <div class="mobile-menu__item">
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <h3 class="contacts__title">
+                                Email
+                            </h3>
+                            <a class="link contacts__link burger-contacts__link" href="mailto:needhelp@organick.com">
+                                needhelp@organick.com
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <h3 class="contacts__title">
+                                Phone
+                            </h3>
+                            <a class="link contacts__link burger-contacts__link" href="tel:+12312541452">
+                                123 (1254) 1452
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <h3 class="contacts__title">
+                                Address
+                            </h3>
+                            <span class="contacts__span">
+                                88 Road, Brooklyn Street, USA
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mobile-menu__item">
+                    <ul class="social">
+                        <li class="social__item">
+                            <a class="link social__link burger-link" href="#">
+                                <span class="social__icon"
+                                    style="-webkit-mask-image: url(images/sprite.svg#facebook)"></span>
+                                <span class="sr-only">Go in facebook</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="link social__link burger-link" href="#">
+                                <span class="social__icon" style="-webkit-mask-image: url(images/sprite.svg#twitter)"
+                                    href="#"></span>
+                                <span class="sr-only">Go in twitter</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="link social__link burger-link" href="#">
+                                <span class="social__icon"
+                                    style="-webkit-mask-image: url(images/sprite.svg#instagram)"></span>
+                                <span class="sr-only">Go in instagram</span>
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a class="link social__link burger-link" href="#">
+                                <span class="social__icon"
+                                    style="-webkit-mask-image: url(images/sprite.svg#pinterest)"></span>
+                                <span class="sr-only">Go in pinterest</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<main class="main">
+    
+    <section class="hero" style="background-image: url('images/hero-bg.jpg')">
+    <div class="container">
+        <div class="hero__wrapper">
+            <span class="title hero__title">
+                Made with nature
+            </span>
+            <p class="hero__caption">
+                Welcome to the world of nature and organic.
+            </p>
+            <a class="more-link more-link--light" href="#">Explore Now</a>
+        </div>
+    </div>
+</section>
+
+    <section class="promo">
+    <div class="container">
+        <h2 class="sr-only">We offer</h2>
+        <ul class="promo__wrapper">
+            <li class="promo__item">
+                <a class="promo-card" href="#" style="background-image:url('images/promo-natural.jpg')">
+                    <h3 class="title promo-card__title">Natural!!</h3>
+                    <p class="promo-card__text promo-card__text--white">Get Garden Fresh Fruits</p>
+                </a>
+            </li>
+            <li class="promo__item">
+                <a class="promo-card" href="#" style="background-image:url('images/promo-offer.jpg')">
+                    <h3 class="title">Offer!!</h3>
+                    <p class="promo-card__text">Get 10% off on Vegetables</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <section class="about">
+    <div class="container">
+        <div class="about__wrapper" style="background-image:url('images/about-bg.png')">
+            <div class="about__inner">
+                <h2 class="title">About Us</h2>
+                <p class="caption about__caption">We Believe in Organic Foods For Strong Health</p>
+                <p class="about__text">
+                    Welcome to the world of natural and organic. Here you can discover the bounty of nature. We have
+                    grown on the principles of health, and care. We aim to give our customers a healthy chemical-free
+                    meal for perfect nutrition.
+                </p>
+                <ul class="about__list">
+                    <li class="about__item">
+                        <div class="about__features about__features--foods">
+                            <h3 class="about__features-title">Organic Foods Only</h3>
+                            <p>The Product that you ordered will be verified that we have or not if have we will start
+                                to move on with the next step.</p>
+                        </div>
+                    </li>
+                    <li class="about__item">
+                        <div class="about__features about__features--standarts">
+                            <h3 class="about__features-title">Quality Standards</h3>
+                            <p>Once your product is packed it will be delivered to your nearby locality you can directly
+                                visit the to buy the product.</p>
+                        </div>
+                    </li>
+                </ul>
+                <a class="more-link more-link--dark" href="#">Shop Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="products">
+    <div class="container products__container">
+        <span class="title">Organic</span>
+        <h2 class="caption products__caption">Our products</h2>
+        <div class="products__wrapper">
+            <article class="product-card">
+                <a class="product-card__link" href="#">
+                    <span class="product-card__category">
+                        Vegetable
+                    </span>
+                    <img class="product-card__img" src="../images/products/broccoli.jpg" width="378" height="387"
+                        alt="Broccoli image">
+                    <h3 class="product-card__title">Calabrese Broccoli</h3>
+                    <div class="product-card__container">
+                        <div class="product-card__price-box">
+                            <span class="product-card__price product-card__price--disabled">$ 25.00 USD</span>
+                            <span class="product-card__price product-card__price">$ 21.00 USD</span>
+                        </div>
+                        <div class="product-card__rating" data-rateyo-rating="5"></div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a class="product-card__link" href="#">
+                    <span class="product-card__category">
+                        Vegetable
+                    </span>
+                    <img class="product-card__img" src="../images/products/corn.jpg" width="378" height="387"
+                        alt="Broccoli image">
+                    <h3 class="product-card__title">Fresh Corn</h3>
+                    <div class="product-card__container">
+                        <div class="product-card__price-box">
+                            <span class="product-card__price product-card__price--disabled">$ 21.23 USD</span>
+                            <span class="product-card__price product-card__price">$ 18.00 USD</span>
+                        </div>
+                        <div class="product-card__rating" data-rateyo-rating="5"></div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a class="product-card__link" href="#">
+                    <span class="product-card__category">
+                        Mill
+                    </span>
+                    <img class="product-card__img" src="../images/products/pistachio.jpg" width="378" height="387"
+                        alt="Broccoli image">
+                    <h3 class="product-card__title">Dried Pistachino</h3>
+                    <div class="product-card__container">
+                        <div class="product-card__price-box">
+                            <span class="product-card__price product-card__price--disabled">$ 61.00 USD</span>
+                            <span class="product-card__price product-card__price">$ 48.00 USD</span>
+                        </div>
+                        <div class="product-card__rating" data-rateyo-rating="5"></div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a class="product-card__link" href="#">
+                    <span class="product-card__category">
+                        Vegetable
+                    </span>
+                    <img class="product-card__img" src="../images/products/tomato.jpg" width="378" height="387"
+                        alt="Broccoli image">
+                    <h3 class="product-card__title">Vegan Red Tomato</h3>
+                    <div class="product-card__container">
+                        <div class="product-card__price-box">
+                            <span class="product-card__price product-card__price--disabled">$ 14.00 USD</span>
+                            <span class="product-card__price product-card__price">$ 9.37 USD</span>
+                        </div>
+                        <div class="product-card__rating" data-rateyo-rating="5"></div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a class="product-card__link" href="#">
+                    <span class="product-card__category">
+                        Mill
+                    </span>
+                    <img class="product-card__img" src="../images/products/almonds.jpg" width="378" height="387"
+                        alt="Broccoli image">
+                    <h3 class="product-card__title">Organic Almonds</h3>
+                    <div class="product-card__container">
+                        <div class="product-card__price-box">
+                            <span class="product-card__price product-card__price--disabled">$ 21.00 USD</span>
+                            <span class="product-card__price product-card__price">$ 18.00 USD</span>
+                        </div>
+                        <div class="product-card__rating" data-rateyo-rating="5"></div>
+                    </div>
+                </a>
+            </article>
+            <article class="product-card">
+                <a class="product-card__link" href="#">
+                    <span class="product-card__category">
+                        Mill
+                    </span>
+                    <img class="product-card__img" src="../images/products/hazelnut.jpg" width="378" height="387"
+                        alt="Broccoli image">
+                    <h3 class="product-card__title">Brown Hazelnut</h3>
+                    <div class="product-card__container">
+                        <div class="product-card__price-box">
+                            <span class="product-card__price product-card__price--disabled">$ 43.00 USD</span>
+                            <span class="product-card__price product-card__price">$ 34.00 USD</span>
+                        </div>
+                        <div class="product-card__rating" data-rateyo-rating="5"></div>
+                    </div>
+                </a>
+            </article>
+        </div>
+
+        <a class="link products__link" href="#">View more</a>
+    </div>
+</section>
+
+    
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__top">
+            <div class="contacts">
+                <h2 class="contacts__caption">Contact Us</h2>
+
+                <address class="contacts__address">
+                    <ul class="contacts__list">
+                        <li class="contacts__item">
+                            <h3 class="contacts__title">
+                                Email
+                            </h3>
+                            <a class="link contacts__link" href="mailto:needhelp@organick.com">
+                                needhelp@organick.com
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <h3 class="contacts__title">
+                                Phone
+                            </h3>
+                            <a class="link contacts__link" href="tel:+12312541452">
+                                123 (1254) 1452
+                            </a>
+                        </li>
+                        <li class="contacts__item">
+                            <h3 class="contacts__title">
+                                Address
+                            </h3>
+                            <span class="contacts__span">
+                                88 Road, Brooklyn Street, USA
+                            </span>
+                        </li>
+                    </ul>
+                </address>
+
+            </div>
+
+            <div class="footer__inner">
+                <a class="link logo footer__logo" href="#">
+                    <img class="logo__img" src="images/logo.svg" width="200" height="56" alt="Logo image">
+                </a>
+
+                <p class="footer__text">
+                    We are a popular and farming company aspiring to be a leader in the Organic food industry.
+                </p>
+
+                <ul class="social">
+                    <li class="social__item">
+                        <a class="link social__link" href="#">
+                            <span class="social__icon"
+                                style="-webkit-mask-image: url(images/sprite.svg#facebook)"></span>
+                            <span class="sr-only">Go in facebook</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="link social__link" href="#">
+                            <span class="social__icon" style="-webkit-mask-image: url(images/sprite.svg#twitter)"
+                                href="#"></span>
+                            <span class="sr-only">Go in twitter</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="link social__link" href="#">
+                            <span class="social__icon"
+                                style="-webkit-mask-image: url(images/sprite.svg#instagram)"></span>
+                            <span class="sr-only">Go in instagram</span>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="link social__link" href="#">
+                            <span class="social__icon"
+                                style="-webkit-mask-image: url(images/sprite.svg#pinterest)"></span>
+                            <span class="sr-only">Go in pinterest</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__nav">
+                <h2 class="footer__title">
+                    Utility Pages
+                </h2>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a class="link footer__link" href="#">
+                            Style Guide
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="link footer__link" href="#">
+                            Protected
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="link footer__link" href="#">
+                            Page Not Found
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="link footer__link" href="#">
+                            Changelog
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a class="link footer__link" href="#">
+                            Licenses
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <span class="footer__rights">Copyright &copy; Organick | Designed by VictorFlow - Powered by Webflow</span>
+    </div>
+</footer>
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
+
+   

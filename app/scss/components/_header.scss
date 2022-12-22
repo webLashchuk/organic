@@ -1,0 +1,239 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    padding: 40px 0;
+    font-family: 'Roboto', sans-serif;
+    z-index: 2;
+    transition: padding .5s;
+
+    @include mq('tablet-2') {
+        padding: 30px 0;
+    }
+
+    @include mq('tablet') {
+        padding: 20px 0;
+    }
+
+    @include mq('phone') {
+        padding: 10px 0;
+    }
+
+    &__sticky {
+        box-shadow: 0px 0px 5px 0px $accent;
+        padding: 10px 0;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        margin-right: 120px;
+
+        @include mq('desktop') {
+            margin-right: 80px;
+        }
+
+        @include mq('tablet-2') {
+            width: 150px;
+            margin-right: auto;
+        }
+
+        @include mq('tablet') {
+            margin: 0 auto;
+        }
+
+        @include mq('phone') {
+            width: 140px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        font-size: 20px;
+        color: $primary;
+        margin-right: auto;
+
+        @include mq('tablet-2') {
+            margin-right: 10px;
+        }
+
+        @include mq('tablet') {
+            display: none;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        @include mq('desktop') {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+
+        @include mq('tablet-2') {
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+
+    &__link {
+        &--active {
+            color: $accent;
+        }
+    }
+}
+
+.cart-btn {
+    position: relative;
+    font-size: 16px;
+    border: 1px solid $gray;
+    border-radius: 33px;
+    padding: 20px 30px 20px 77px;
+    cursor: pointer;
+    transition: color .3s, background-color .3s, outline .3s;
+
+    @include mq('tablet-2') {
+        padding: 10px 10px 10px 40px;
+    }
+
+    @include mq('phone') {
+        padding: 8px 10px 8px 40px;
+        font-size: 14px;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background-color .3s;
+    }
+
+    &::before {
+        left: 11px;
+        width: 56px;
+        height: 56px;
+        background-color: $primary;
+        border-radius: 50%;
+
+        @include mq('tablet-2') {
+            left: 4px;
+            width: 34px;
+            height: 34px;
+        }
+
+        @include mq('phone') {
+            left: 4px;
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &::after {
+        left: 26px;
+        width: 26px;
+        height: 24px;
+        mask-image: url('../images/sprite.svg#cart-icon');
+        background-color: $white;
+        mask-repeat: no-repeat;
+
+        @include mq('tablet-2') {
+            left: 12px;
+            width: 18px;
+            height: 18px;
+        }
+
+        @include mq('phone') {
+            left: 11px;
+            width: 16px;
+            height: 14px;
+        }
+    }
+
+    &:focus {
+        outline: 2px solid $accent;
+    }
+
+    &:hover {
+        background-color: $primary;
+        color: $white;
+
+        &::before {
+            background-color: $white;
+        }
+
+        &::after {
+            background-color: $primary;
+        }
+    }
+
+    &:active {
+        background-color: $accent;
+
+        &::before {
+            background-color: $white;
+        }
+
+        &::after {
+            background-color: $accent;
+        }
+    }
+}
+
+.burger-btn {
+    display: none;
+    position: relative;
+    color: $primary;
+    margin-right: 10px;
+    z-index: 3;
+
+    &--open {
+        width: 30px;
+        height: 20px;
+    }
+
+    @include mq('tablet') {
+        display: block;
+    }
+
+    &__line {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: $primary;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $primary;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        top: calc(100% - 2px);
+    }
+}

@@ -1,0 +1,21 @@
+.offer {
+    padding: 120px 0 140px;
+    background-color: $primary;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 45px;
+    }
+
+    &__caption {
+        color: white;
+    }
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+}
