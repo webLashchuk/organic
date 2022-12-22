@@ -1,0 +1,52 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    padding-top: 142px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    @include mq('phone') {
+        box-shadow: inset 0 0 0 1500px rgba($white, 0.5);
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        height: calc(100vh - 142px);
+        font-family: 'Roboto', sans-serif;
+        color: $primary;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__caption {
+        max-width: 500px;
+        font-size: 70px;
+        font-weight: 700;
+        margin-bottom: 30px;
+
+        @include mq('tablet-2') {
+            max-width: 450px;
+            font-size: 54px;
+        }
+
+        @include mq('tablet') {
+            max-width: 400px;
+            font-size: 48px;
+        }
+
+        @include mq('phone') {
+            max-width: 300px;
+            font-size: 36px;
+        }
+    }
+}

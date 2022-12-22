@@ -1,0 +1,227 @@
+.footer {
+    &__top {
+        padding-bottom: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        @include mq('tablet-2') {
+            padding-bottom: 80px;
+        }
+
+        @include mq('tablet') {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+        }
+
+        @include mq('phone') {
+            padding-bottom: 50px;
+        }
+    }
+
+    &__inner {
+        max-width: 670px;
+        width: 100%;
+        text-align: center;
+        border-left: 1px solid $footerBorder;
+        border-right: 1px solid $footerBorder;
+        margin-right: 20px;
+        padding: 0 52px 85px;
+
+        @include mq('tablet-2') {
+            padding: 0 15px 50px;
+        }
+
+        @include mq('tablet') {
+            border: none;
+            order: 1;
+            margin: 0 auto;
+        }
+
+        @include mq('tablet-2') {
+            padding: 0 0 30px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 50px;
+
+        @include mq('tablet') {
+            margin-bottom: 30px;
+        }
+
+        @include mq('phone') {
+            max-width: 350px;
+            text-align: left;
+        }
+    }
+
+    &__logo {
+        display: block;
+        max-width: 200px;
+        text-align: center;
+        margin: 0 auto 45px;
+
+        @include mq('tablet-2') {
+            width: 150px;
+        }
+
+        @include mq('tablet') {
+            margin: 0 auto 30px;
+        }
+
+        @include mq('phone') {
+            width: 140px;
+            margin: 0 0 30px;
+        }
+    }
+
+    &__title {
+        @extend %footer-title;
+        margin-bottom: 20px;
+
+        @include mq('tablet-2') {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__nav {
+        max-width: 335px;
+        width: 100%;
+        line-height: 1.2;
+
+        @include mq('tablet-2') {
+            max-width: 240px;
+        }
+
+        @include mq('tablet') {
+            margin-right: 50px;
+            order: 2;
+        }
+
+        // @include mq('tablet') {
+        //     margin-right: 50px;
+        //     order: 2;
+        // }
+    }
+
+    &__item {
+        margin-bottom: 25px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid $footerBorder;
+        padding: 25px 10px;
+
+        @include mq('tablet') {
+            font-size: 14px;
+        }
+    }
+
+}
+
+.contacts {
+    max-width: 335px;
+    width: 100%;
+    text-align: right;
+    margin-right: 20px;
+
+    @include mq('tablet-2') {
+        max-width: 240px
+    }
+
+    @include mq('tablet') {
+        text-align: left;
+        order: 3;
+    }
+
+    &__caption {
+        @extend %footer-title;
+        margin-bottom: 35px;
+
+        @include mq('tablet-2') {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__address {
+        font-family: 'Open Sans', sans-serif;
+        font-style: normal;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+
+            @include mq('tablet-2') {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mq('phone') {
+        justify-content: flex-start;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    &__link {
+        position: relative;
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $mint;
+        transition: opacity .3s, background-color .3s;
+
+        @include mq('tablet-2') {
+            width: 40px;
+            height: 40px;
+        }
+
+        &:hover {
+            opacity: .7;
+        }
+
+        &:active {
+            background-color: $accent;
+            opacity: 1;
+
+            .social__icon {
+                background-color: $white;
+            }
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        width: 20px;
+        height: 20px;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        background-color: $primary;
+    }
+}

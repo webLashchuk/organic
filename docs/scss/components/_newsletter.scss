@@ -1,0 +1,38 @@
+.newsletter {
+    padding: 110px 0 150px;
+
+    &__wrapper {
+        width: 100%;
+        border-radius: 30px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        padding: 100px 70px;
+    }
+
+    &__caption {
+        color: $white;
+        max-width: 320px;
+        margin-right: auto;
+    }
+
+    &__field {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 18px;
+        color: $secondary;
+        border-radius: 16px;
+        padding: 26px 30px;
+        width: 350px;
+
+        &:focus {
+            outline: 2px solid $accent;
+        }
+
+        &:hover {
+            &::placeholder {
+                transition: color .5s;
+                color: transparent;
+            }
+        }
+    }
+}

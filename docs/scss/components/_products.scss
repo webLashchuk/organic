@@ -1,0 +1,204 @@
+.products {
+    padding: 120px 0 70px;
+    text-align: center;
+
+    @include mq('desktop') {
+        padding: 100px 0 70px;
+    }
+
+    @include mq('tablet-2') {
+        padding: 80px 0 70px;
+    }
+
+    @include mq('phone') {
+        padding: 50px 0 50px;
+    }
+
+    &__caption {
+        margin-bottom: 40px;
+    }
+
+    &__container {
+        padding: 0;
+    }
+
+    &__wrapper {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, minmax(300px, 450px));
+        grid-gap: 20px;
+        margin-bottom: 55px;
+
+        @include mq('desktop') {
+            grid-template-columns: repeat(2, minmax(300px, 450px));
+        }
+
+        @include mq('tablet') {
+            grid-gap: 10px;
+            grid-template-columns: repeat(2, minmax(250px, 450px));
+        }
+
+        @include mq('phone') {
+            grid-gap: 0;
+            grid-template-columns: repeat(2, minmax(150px, 450px));
+            margin-bottom: 30px;
+        }
+    }
+
+    &__link {
+        font-size: 22px;
+        font-weight: 400;
+        color: $primary;
+
+        @include mq('phone') {
+            font-size: 18px;
+        }
+    }
+}
+
+.product-card {
+    background-color: $grayBg;
+    border-radius: 30px;
+    text-align: left;
+    transition: box-shadow .3s;
+
+    @include mq('phone') {
+        border-radius: 0;
+        border: 1px solid $gray;
+    }
+
+    &:hover {
+        box-shadow: 0 0 5px $accent;
+    }
+
+    &__link {
+        max-width: 450px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 30px 35px;
+
+        @include mq('tablet-2') {
+            padding: 30px;
+        }
+
+        @include mq('tablet') {
+            padding: 20px;
+        }
+
+        &:focus {
+            outline: 2px solid $accent;
+            border-radius: 30px;
+
+            @include mq('phone') {
+                border-radius: 0;
+            }
+        }
+    }
+
+    &__category {
+        display: inline-block;
+        font-size: 15px;
+        font-weight: 700;
+        color: $white;
+        background-color: $primary;
+        border-radius: 8px;
+        padding: 5px 20px;
+
+        @include mq('phone') {
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+    }
+
+    &__img {
+        margin-bottom: 20px;
+        object-fit: contain;
+
+        @include mq('tablet-2') {
+            max-height: 320px;
+        }
+
+        @include mq('phone') {
+            max-height: 200px;
+        }
+
+        @include mq('phone-2') {
+            max-height: 150px;
+        }
+    }
+
+    &__title {
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        font-size: 22px;
+        font-weight: 400;
+        color: $primary;
+        margin-bottom: 10px;
+        flex-grow: 1;
+        border-bottom: 1px solid $gray;
+        padding-bottom: 10px;
+
+        @include mq('tablet-2') {
+            margin-bottom: 20px;
+        }
+
+        @include mq('phone') {
+            font-size: 18px;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mq('tablet-2') {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+    }
+
+    &__price {
+        font-weight: 700;
+        color: $primary;
+        margin-right: auto;
+        -wrap: wrap-reverse;
+
+        @include mq('tablet') {
+            font-size: 16px;
+        }
+
+        &--disabled {
+            font-weight: 400;
+            color: $disabled;
+            text-decoration-line: line-through;
+            text-decoration-thickness: 1px;
+            margin-right: 10px;
+
+            @include mq('phone') {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__price-box {
+        display: flex;
+
+        @include mq('phone') {
+            flex-direction: column;
+        }
+    }
+
+    &__rating {
+        z-index: 0;
+
+        @include mq('tablet-2') {
+            padding-left: 0;
+            margin-bottom: 10px;
+        }
+    }
+}
