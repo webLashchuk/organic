@@ -15,6 +15,10 @@
     }
 
     &__container {
+        padding: 0;
+    }
+
+    &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -37,5 +41,24 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+
+        @include mq('phone') {
+            grid-template-columns: repeat(3, 225px);
+            grid-gap: 10px;
+            padding: 0 10px;
+
+            &:hover {
+                box-shadow: none;
+            }
+        }
     }
+}
+
+.product-card--offer {
+    border-radius: 30px;
+    border: none;
 }
