@@ -42,23 +42,37 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
         overflow-x: auto;
-        &::-webkit-scrollbar {
-            width: 0;
+        padding: 0 10px;
+
+        @include mq('desktop') {
+            grid-template-columns: repeat(3, 380px);
+        }
+
+        @include mq('tablet-2') {
+            grid-template-columns: repeat(3, minmax(250px, 380px));
+        }
+
+        @include mq('tablet') {
+            grid-gap: 10px;
         }
 
         @include mq('phone') {
-            grid-template-columns: repeat(3, 225px);
-            grid-gap: 10px;
-            padding: 0 10px;
-
-            &:hover {
-                box-shadow: none;
-            }
+            grid-template-columns: repeat(3, 250px);
         }
     }
 }
 
-.product-card--offer {
-    border-radius: 30px;
-    border: none;
+.product-card {
+    &--offer {
+        border-radius: 30px;
+        border: none;
+    }
+
+    &__img{
+        &--offer {
+            @include mq('tablet-2') {
+                max-height: 200px;
+            }
+        }
+    }
 }

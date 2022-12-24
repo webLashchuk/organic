@@ -1,19 +1,67 @@
 .newsletter {
     padding: 110px 0 150px;
 
+    @include mq('desktop') {
+        padding: 100px 0 100px;
+    }
+
+    @include mq('tablet-2') {
+        padding: 80px 0 80px;
+    }
+
+    @include mq('phone') {
+        padding: 50px 0 50px;
+    }
+
     &__wrapper {
         width: 100%;
         border-radius: 30px;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
+        align-items: center;
         padding: 100px 70px;
+
+        @include mq('desktop') {
+            padding: 80px 50px 60px;
+        }
+
+        @include mq('tablet-2') {
+            padding: 40px 25px 20px;
+            flex-wrap: wrap;
+        }
+
+        @include mq('phone') {
+            padding: 30px 15px 10px;
+        }
+    }
+
+    &__form {
+        @include mq('tablet') {
+            margin-bottom: 10px;
+        }
+
+        @include mq('phone') {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
     }
 
     &__caption {
         color: $white;
         max-width: 320px;
         margin-right: auto;
+
+        @include mq('tablet-2') {
+            max-width: 240px;
+            margin-bottom: 20px;
+        }
+
+        @include mq('phone') {
+            max-width: 100%
+        }
     }
 
     &__field {
@@ -23,6 +71,22 @@
         border-radius: 16px;
         padding: 26px 30px;
         width: 350px;
+
+        @include mq('tablet-2') {
+            padding: 21px 20px;
+            width: 280px;
+            margin-bottom: 20px;
+        }
+
+        @include mq('tablet') {
+            margin-bottom: 10px;
+        }
+
+        @include mq('phone') {
+            width: 260px;
+            font-size: 16px;
+            padding: 16px 10px;
+        }
 
         &:focus {
             outline: 2px solid $accent;

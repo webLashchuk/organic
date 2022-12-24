@@ -414,19 +414,22 @@
 </section>
 
     <section class="offer">
-    <div class="container offer__container">
+    <div class="container">
         <h2 class="title">Offer Products</h2>
         <div class="offer__top">
             <p class="caption offer__caption">We Offer Organic for You</p>
             <a class="more-link more-link--light" href="#">View All products</a>
         </div>
+    </div>
+    <div class="container offer__container">
         <div class="offer__wrapper">
             <article class="product-card product-card--offer">
                 <a class="product-card__link" href="#">
                     <span class="product-card__category">
                         Vegetable
                     </span>
-                    <img class="product-card__img" src="images/products/tomato.jpg" width="378" height="387" alt="Broccoli image">
+                    <img class="product-card__img product-card__img--offer" src="images/products/tomato.jpg" width="378"
+                        height="387" alt="Broccoli image">
                     <h3 class="product-card__title">Vegan Red Tomato</h3>
                     <div class="product-card__container">
                         <span class="product-card__price product-card__price--disabled">$ 14.00 USD</span>
@@ -440,7 +443,8 @@
                     <span class="product-card__category">
                         Mill
                     </span>
-                    <img class="product-card__img" src="images/products/almonds.jpg" width="378" height="387" alt="Broccoli image">
+                    <img class="product-card__img product-card__img--offer" src="images/products/almonds.jpg"
+                        width="378" height="387" alt="Broccoli image">
                     <h3 class="product-card__title">Organic Almonds</h3>
                     <div class="product-card__container">
                         <span class="product-card__price product-card__price--disabled">$ 21.00 USD</span>
@@ -454,7 +458,8 @@
                     <span class="product-card__category">
                         Vegetable
                     </span>
-                    <img class="product-card__img" src="images/products/corn.jpg" width="378" height="387" alt="Broccoli image">
+                    <img class="product-card__img product-card__img--offer" src="images/products/corn.jpg" width="378"
+                        height="387" alt="Broccoli image">
                     <h3 class="product-card__title">Fresh Corn</h3>
                     <div class="product-card__container">
                         <span class="product-card__price product-card__price--disabled">$ 21.23 USD</span>
@@ -467,7 +472,115 @@
     </div>
 </section>
 
-    
+    <section class="features">
+    <div class="container features__container" style="background-image:url('images/features/features-bg.jpg')">
+            <div class="features__inner">
+                <h2 class="sr-only">Our features</h2>
+                <span class="title">Eco Friendly</span>
+                <p class="caption features__caption">From our Farm to your Home.</p>
+                <ul class="features__list">
+                    <li class="features__item">
+                        <h3 class="features__title">
+                            Choose Your Products
+                        </h3>
+                        <p>
+                            In our listing, we have several collections of organic products. This is the place where you
+                            need to choose the product you want.
+                        </p>
+                    </li>
+                    <li class="features__item">
+                        <h3 class="features__title">
+                            Farmers will produce it
+                        </h3>
+                        <p>
+                            The Product that you ordered will be verified that we have or not if have we will start to move on with the next step.
+                        </p>
+                    </li>
+                    <li class="features__item">
+                        <h3 class="features__title">
+                            We Can Delivery too
+                        </h3>
+                        <p>
+                            If you are not comfortable going to the nearby market place we also will deliver your product to your doorstep.
+                        </p>
+                    </li>
+                </ul>
+        </div>
+    </div>
+</section>
+
+    <section class="categories">
+    <ul class="categories__list">
+        <li class="categories__item">
+            <a href="#" class="categories__link categories__link--fruits" style="background-image:url('images/categories/fruit-bg.jpg')">
+                <h3 class="categories__title">
+                    Fruit Juice
+                </h3>
+            </a>
+        </li>
+        <li class="categories__item">
+            <a href="#" class="categories__link categories__link--organic" style="background-image:url('images/categories/organic-bg.jpg')">
+                <h3 class="categories__title">
+                    Organic Food
+                </h3>
+            </a>
+        </li>
+        <li class="categories__item">
+            <a href="#" class="categories__link categories__link--nuts" style="background-image:url('images/categories/nuts-bg.jpg')">
+                <h3 class="categories__title">
+                    Nuts Cookies
+                </h3>
+            </a>
+        </li>
+    </ul>
+</section>
+
+    <section class="news">
+    <div class="container">
+        <h2 class="title">News</h2>
+        <div class="news__container">
+            <p class="caption news__caption">Discover the recent content about organic products</p>
+            <a class="more-link more-link--light" href="#">More News</a>
+        </div>
+        <ul class="news__list">
+            <li class="news__item" style="background-image:url('images/news/left-bg.jpg')">
+                <a class="blog" href="#">
+                    <span class="blog__author">Kristina Castle</span>
+                    <h3 class="blog__title">Everything You Need to Know About Organic</h3>
+                    <blockquote class="blog__blockquote">
+                        Organic farming is the only way that you still can
+                        experience the real world.
+                    </blockquote>
+                    <span class="blog__more">View More</span>
+                </a>
+            </li>
+            <li class="news__item" style="background-image:url('images/news/right-bg.jpg')">
+                <a class="blog" href="#">
+                    <span class="blog__author">Alex Louis</span>
+                    <h3 class="blog__title">Organic Fruits: Surprising Benefits and Facts</h3>
+                    <blockquote class="blog__blockquote">
+                        The world of nature has grown on the principles of health,
+                        ecology, and care.
+                    </blockquote>
+                    <span class="blog__more">View More</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+    <section class="newsletter">
+    <div class="container">
+        <div class="newsletter__wrapper" style="background-image:url('images/newsletter-bg.jpg')">
+            <h2 class="caption newsletter__caption">Subscribe our Newsletter</h2>
+            <form class="newsletter__form" action="#">
+                <label class="sr-only" for="email">Enter your email for subscribe</label>
+                <input class="newsletter__field" type="email" id="email" name="email" placeholder="Enter your email address" required>
+                <button class="more-link more-link--dark" type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
 
 </main>
 

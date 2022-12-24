@@ -4,10 +4,29 @@
     display: flex;
     justify-content: center;
 
+    @include mq('desktop') {
+        padding: 100px 0 70px;
+    }
+
+    @include mq('tablet-2') {
+        padding: 80px 0 70px;
+    }
+
+    @include mq('phone') {
+        background-color: $white;
+        padding: 50px 0;
+    }
+
     &__list {
         width: 100%;
         display: flex;
         justify-content: center;
+        padding: 0 10px;
+
+        @include mq('tablet') {
+            flex-direction: column;
+            padding: 0;
+        }
     }
 
     &__item {
@@ -16,6 +35,15 @@
 
         &:not(:last-child) {
             margin-right: 30px;
+        }
+
+        @include mq('tablet') {
+            flex-direction: column;
+            max-width: 100%;
+
+            &:not(:last-child) {
+                margin-right: 0;
+            }
         }
     }
 
@@ -30,6 +58,10 @@
         height: 580px;
         transition: transform .3s;
 
+        @include mq('tablet') {
+            height: 300px;
+        }
+
         &:focus {
             outline: 2px solid $accent;
         }
@@ -42,8 +74,19 @@
     &__title {
         display: inline-block;
         @extend %title-font;
+        text-align: center;
         background-color: $white;
         border-radius: 20px;
         padding: 30px 80px;
+
+        @include mq('desktop') {
+            font-size: 26px;
+            padding: 15px 40px;
+        }
+
+        @include mq('desktop') {
+            font-size: 22px;
+            padding: 15px 30px;
+        }
     }
 }
