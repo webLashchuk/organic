@@ -7,11 +7,11 @@
     }
 
     @include mq('tablet-2') {
-        padding: 80px 0 70px;
+        padding: 50px 0 70px;
     }
 
     @include mq('phone') {
-        padding: 50px 0 50px;
+        padding: 30px 0 50px;
     }
 
     &__container {
@@ -40,24 +40,22 @@
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 20px;
-        overflow-x: auto;
         padding: 0 10px;
-
+        grid-gap: 20px;
+        
         @include mq('desktop') {
-            grid-template-columns: repeat(3, 380px);
-        }
-
-        @include mq('tablet-2') {
             grid-template-columns: repeat(3, minmax(250px, 380px));
         }
-
-        @include mq('tablet') {
+        
+        @include mq('tablet-2') {
             grid-gap: 10px;
+            grid-template-columns: repeat(3, minmax(220px, 380px));
         }
-
-        @include mq('phone') {
+        
+        @include mq('tablet') {
             grid-template-columns: repeat(3, 250px);
+            overflow-x: auto;
+            padding: 20px 10px;
         }
     }
 }
