@@ -43,16 +43,16 @@
         grid-template-columns: repeat(3, 1fr);
         padding: 0 10px;
         grid-gap: 20px;
-        
+
         @include mq('desktop') {
             grid-template-columns: repeat(3, minmax(250px, 380px));
         }
-        
+
         @include mq('tablet-2') {
             grid-gap: 10px;
             grid-template-columns: repeat(3, minmax(220px, 380px));
         }
-        
+
         @include mq('tablet') {
             grid-template-columns: repeat(3, 250px);
             overflow-x: auto;
@@ -67,10 +67,19 @@
         border: none;
     }
 
-    &__img{
+    &__img {
         &--offer {
             @include mq('tablet-2') {
                 max-height: 200px;
+            }
+        }
+    }
+
+    &__price-box {
+        &--offer {
+            @include mq('desktop') {
+                width: 100%;
+                flex-direction: column;
             }
         }
     }

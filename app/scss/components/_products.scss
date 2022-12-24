@@ -135,14 +135,14 @@
         width: 100%;
         font-size: 22px;
         font-weight: 400;
-        color: $primary;
         margin-bottom: 10px;
+        color: $primary;
         flex-grow: 1;
         border-bottom: 1px solid $gray;
         padding-bottom: 10px;
 
         @include mq('tablet-2') {
-            margin-bottom: 20px;
+            margin-bottom: 0;
         }
 
         @include mq('phone') {
@@ -199,10 +199,10 @@
     &__rating {
         z-index: 0;
         line-height: 2;
+        padding: 10px 0;
 
-        @include mq('tablet-2') {
+        @include mq('desktop') {
             padding-left: 0;
-            margin-bottom: 10px;
         }
     }
 }
