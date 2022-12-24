@@ -91,10 +91,6 @@
         &:focus {
             outline: 2px solid $accent;
             border-radius: 30px;
-
-            @include mq('phone') {
-                border-radius: 0;
-            }
         }
     }
 

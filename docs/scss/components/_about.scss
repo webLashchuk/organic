@@ -89,7 +89,7 @@
             padding-left: 100px;
         }
 
-        @include mq('tablet') {
+        @include mq('phone') {
             padding-left: 80px;
         }
 

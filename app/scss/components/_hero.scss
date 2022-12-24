@@ -70,5 +70,11 @@
             max-width: 300px;
             font-size: 36px;
         }
+
+        @include r(420) {
+            max-width: 380px;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
     }
 }

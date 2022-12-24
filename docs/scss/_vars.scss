@@ -27,6 +27,12 @@ $black: #000;
   }
 }
 
+@mixin r($height) {
+  @media (max-height: #{$height}px) {
+    @content;
+   }
+}
+
 %footer-title {
   font-family: 'Roboto', sans-serif;
   font-size: 30px;
