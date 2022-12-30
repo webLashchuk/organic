@@ -99,11 +99,6 @@
             margin-right: 50px;
             order: 2;
         }
-
-        // @include mq('tablet') {
-        //     margin-right: 50px;
-        //     order: 2;
-        // }
     }
 
     &__item {
@@ -120,7 +115,6 @@
             font-size: 14px;
         }
     }
-
 }
 
 .contacts {

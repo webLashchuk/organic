@@ -3,7 +3,6 @@ body {
     height: 100%;
 }
 
-
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -11,7 +10,7 @@ body {
     font-weight: 400;
     letter-spacing: 0.36px;
     color: $secondary;
-    background-color: $white;
+    background-color: $grayBg;
     display: flex;
     flex-direction: column;
 
